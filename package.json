@@ -1,0 +1,37 @@
+{
+  "name": "month-days",
+  "version": "0.0.0",
+  "description": "Get the number of days in a month",
+  "license": "MIT",
+  "repository": "sindresorhus/month-days",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "month",
+    "days",
+    "year",
+    "date",
+    "utc",
+    "number",
+    "count"
+  ],
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
