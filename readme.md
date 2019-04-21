@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save month-days
+$ npm install month-days
 ```
 
 
