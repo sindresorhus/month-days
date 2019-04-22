@@ -1,12 +1,12 @@
 import test from 'ava';
-import m from './';
+import monthDays from '.';
 
-test(t => {
-	t.throws(() => m('5'), TypeError);
-	t.throws(() => m(false), TypeError);
-	t.throws(() => m(5, true), TypeError);
-	t.is(m(5, 2014), 30);
-	t.is(m(5), 30);
-	t.true(m() >= 28);
-	t.is(m(0, 2015), 31);
+test('main', t => {
+	t.throws(() => monthDays('5'), TypeError);
+	t.throws(() => monthDays(false), TypeError);
+	t.throws(() => monthDays(5, true), TypeError);
+	t.is(monthDays(5, 2014), 30);
+	t.is(monthDays(5), 30);
+	t.true(monthDays() >= 28);
+	t.is(monthDays(0, 2015), 31);
 });

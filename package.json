@@ -1,37 +1,36 @@
 {
-  "name": "month-days",
-  "version": "2.1.0",
-  "description": "Get the number of days in a month",
-  "license": "MIT",
-  "repository": "sindresorhus/month-days",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "month",
-    "days",
-    "year",
-    "date",
-    "utc",
-    "number",
-    "count"
-  ],
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  },
-  "xo": {
-    "esnext": true
-  }
+	"name": "month-days",
+	"version": "2.1.0",
+	"description": "Get the number of days in a month",
+	"license": "MIT",
+	"repository": "sindresorhus/month-days",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=8"
+	},
+	"scripts": {
+		"test": "xo && ava && tsd"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts"
+	],
+	"keywords": [
+		"month",
+		"days",
+		"year",
+		"date",
+		"utc",
+		"number",
+		"count"
+	],
+	"devDependencies": {
+		"ava": "^1.4.1",
+		"tsd": "^0.7.2",
+		"xo": "^0.24.0"
+	}
 }
