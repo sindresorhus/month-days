@@ -15,23 +15,27 @@ $ npm install month-days
 ```js
 const monthDays = require('month-days');
 
-monthDays(1, 2016);
+monthDays({month: 1, year: 2016});
 //=> 29
 ```
 
 
 ## API
 
-### monthDays([month], [year])
+### monthDays([options])
 
-#### month
+#### options
+
+Type: `object`
+
+##### month
 
 Type: `number`<br>
 Default: Current UTC month
 
 Note that the month is zero-index to be consistent with the native date methods.
 
-#### year
+##### year
 
 Type: `number`<br>
 Default: Current UTC year

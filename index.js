@@ -1,7 +1,7 @@
 'use strict';
-const isDefined = x => x !== null && x !== undefined;
+const isDefined = value => value !== undefined;
 
-module.exports = (month, year) => {
+module.exports = ({month, year} = {}) => {
 	if (isDefined(month) && typeof month !== 'number') {
 		throw new TypeError(`Expected \`month\` to be of type \`number\`, got \`${typeof month}\``);
 	}
