@@ -1,4 +1,4 @@
-# month-days [![Build Status](https://travis-ci.org/sindresorhus/month-days.svg?branch=master)](https://travis-ci.org/sindresorhus/month-days)
+# month-days
 
 > Get the number of days in a month
 
