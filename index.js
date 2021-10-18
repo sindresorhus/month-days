@@ -1,7 +1,6 @@
-'use strict';
 const isDefined = value => value !== undefined;
 
-module.exports = ({month, year} = {}) => {
+export default function monthDays({month, year} = {}) {
 	if (isDefined(month) && typeof month !== 'number') {
 		throw new TypeError(`Expected \`month\` to be of type \`number\`, got \`${typeof month}\``);
 	}
@@ -15,4 +14,4 @@ module.exports = ({month, year} = {}) => {
 	year = isDefined(year) ? year : now.getUTCFullYear();
 
 	return new Date(Date.UTC(year, month + 1, 0)).getUTCDate();
-};
+}

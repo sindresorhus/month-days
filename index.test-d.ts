@@ -1,5 +1,5 @@
 import {expectType} from 'tsd';
-import monthDays = require('.');
+import monthDays from './index.js';
 
 expectType<number>(monthDays());
 expectType<number>(monthDays({month: 1}));

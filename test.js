@@ -1,18 +1,24 @@
 import test from 'ava';
-import monthDays from '.';
+import monthDays from './index.js';
 
 test('main', t => {
 	t.throws(() => {
 		monthDays({month: '5'});
-	}, TypeError);
+	}, {
+		instanceOf: TypeError,
+	});
 
 	t.throws(() => {
 		monthDays({month: false});
-	}, TypeError);
+	}, {
+		instanceOf: TypeError,
+	});
 
 	t.throws(() => {
 		monthDays({month: 5, year: true});
-	}, TypeError);
+	}, {
+		instanceOf: TypeError,
+	});
 
 	t.is(monthDays({month: 5, year: 2014}), 30);
 	t.is(monthDays({month: 5}), 30);

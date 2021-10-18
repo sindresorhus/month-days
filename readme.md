@@ -2,27 +2,24 @@
 
 > Get the number of days in a month
 
-
 ## Install
 
+```sh
+npm install month-days
 ```
-$ npm install month-days
-```
-
 
 ## Usage
 
 ```js
-const monthDays = require('month-days');
+import monthDays from 'month-days';
 
 monthDays({month: 1, year: 2016});
 //=> 29
 ```
 
-
 ## API
 
-### monthDays([options])
+### monthDays(options?)
 
 #### options
 
@@ -30,17 +27,12 @@ Type: `object`
 
 ##### month
 
-Type: `number`<br>
+Type: `number`\
 Default: Current UTC month
 
 Note that the month is zero-index to be consistent with the native date methods.
 
 ##### year
 
-Type: `number`<br>
+Type: `number`\
 Default: Current UTC year
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
